@@ -18,12 +18,23 @@ function initMap(){
     Locations[5] = {lat: 19.390519, lng: -99.4238154}
     Locations[6] = {lat: 21.1213285, lng: -86.9192743}
 
+    var nacArray = [];
+    nacArray[0] = "3";
+    nacArray[1] = "14";
+    nacArray[2] = "6";
+    nacArray[3] = " ";
+    nacArray[4] = "8";
+    nacArray[5] = "43";
+    nacArray[6] = "31";
+
     var markers = [];
 
     for(var i = 0; i < 7; i++) {
+        
         markers[i] = new google.maps.Marker({
                     position : Locations[i],
-                    map: map
+                    map: map,
+                    label: {text: nacArray[i], color: "black"}
                     });
     }
     

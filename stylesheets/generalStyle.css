@@ -206,3 +206,18 @@ html, body{
 .form-group {
     margin-top: 25px;
 }
+
+.imagenprinc {
+    width: 80%;
+    left: 10%;
+    height: 89%;
+    margin: auto;
+}
+
+.modal-content{
+    text-align: center;
+}
+
+.fotomodal {
+    width: 100%;
+}

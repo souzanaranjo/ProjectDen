@@ -1,11 +1,5 @@
 $(document).ready(function(){
     $("#ciudadNombre").oninput = autoCompletar();
-    $('#intereses').tagsinput({
-                maxTags:4,
-                typeahead: {
-                    source: ['Buea', 'Douala', 'Kribi', 'Yaounde']
-                }
-    });
 });
 
 
