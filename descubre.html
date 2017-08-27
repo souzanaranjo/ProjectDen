@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Descubre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/generalStyle.css">
+    <link type="text/css" rel="stylesheet" href="stylesheets/materialize.css"  media="screen,projection"/>
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCPkWmUcfyfhk6qY9AlRnxfutGMI_nYtRA"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="javascript/indexJS.js"></script>
+</head>
+
+
+<body>
+   
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><img style="height: 150%" src="images/Logo.png"></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a style="font-size: 1.3em">Descubre</a></li>
+          <li><a style="font-size: 1.3em" href="inscribir.html">Inscribe</a></li>
+        </ul>
+          
+        <ul id="LogButtons" class="nav navbar-nav navbar-right">
+             <li><a style="font-size: 1.2em" href="register.html"><span class="glyphicon glyphicon-user"></span> Crear cuenta</a></li>
+           <li><a style="font-size: 1.2em" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-xs-3">
+        <fieldset>
+          <h4>Búsqueda personalizada</h4>
+          <!--Nombre-->
+          <div class="form-group">
+                  <label for="minprecio">Nombre:  </label>
+                  <input placeholder="Escribir nombre..."  type="text" class="form-control">
+          </div>
+          <!--Ciudad-->
+          <div class="form-group">
+                  <label>Ciudad: </label>
+                  <input id="inputCiudad" placeholder="Escribir ciudad..."  type="text" class="form-control">
+          </div>
+          <!--Estatus-->
+          <div class="form-group">
+                  <label for="distance">Estatus: </label>
+                  <select class="form-control">
+                      <option>Idea</option>
+                      <option>Por iniciar</option>
+                      <option>En proceso</option>
+                  </select>
+          </div>
+          <!--Etiquetas-->
+          <div class="form-group">
+                  <label for="rooms">Etiquetas:  </label>
+                  <input placeholder="Etiquetas..."  type="text" class="form-control">
+          </div>
+          
+        
+          <!--Boton para filtrar proyectos-->
+          <span style="margin-left: 35%" class="btn-center">
+                <button type="submit" id="SearchhButton" class="btn btn-success">Buscar</button>
+          </span>
+        </fieldset>
+      </div>
+
+      <div class="col-xs-9">
+           <div class="row" style="text-align: center">   
+            <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+      </div>  
+        <div class="row" style="text-align: center">   
+            <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+      </div>  
+      <div class="row" style="text-align: center">   
+            <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s1 m3">
+                <div class="card">
+                  <div class="card-image">
+                <div class="card-image">
+                  <img src="images/Logo.png">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h5>Creciendo con Zaragoza</h5>
+                    <p>Tags: Impacto Social, Educacion, Nutricion</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Conoce mas</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+      </div>   
+
+      </div>
+    </div>
+
+    
+</body>
+</html>

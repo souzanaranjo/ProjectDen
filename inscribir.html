@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inscribir Proyecto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/appIcon.ico">
+
+    <link rel="stylesheet" type="text/css"  href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> 
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/generalStyle.css">
+    
+    <script src="javascript/jquery-3.2.1.min.js"></script>
+    <script src="javascript/register.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPkWmUcfyfhk6qY9AlRnxfutGMI_nYtRA&libraries=places"></script>
+</head>
+
+
+<body>
+   
+    
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><img style="height: 150%" src="images/Logo.png"></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a style="font-size: 1.3em" href="descubre.html">Descubre</a></li>
+          <li class="active"><a style="font-size: 1.3em">Inscribe</a></li>
+        </ul>      
+      </div>
+    </nav>
+    
+    <div class="row">
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-8" style="text-align: center">
+            <h1>Registro de proyecto</h1>
+                  <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" placeholder="Escribir nombre">
+                  <div class="form-group">
+                    <label>Ciudad</label>
+                    <input id="ciudadNombre" type="text" class="form-control" id="exampleInputEmail1"  placeholder="Seleccionar ciudad">
+                  </div>
+                  <div class="form-group">
+                    <label>Descripción</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label>Estatus</label>
+                    <select class="form-control" id="exampleSelect1">
+                      <option>Idea</option>
+                      <option>Por iniciar</option>
+                      <option>En proceso</option>
+                    </select>
+                  </div>
+                  <button style="margin-bottom: 30px" class="btn btn-success">Registrar</button>
+                
+              
+        </div>
+        <div class="col-xs-2">
+        </div>
+    </div>
+        
+</body>
+</html>
